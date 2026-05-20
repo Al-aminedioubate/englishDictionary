@@ -9,5 +9,7 @@ body{
 
 .container{
     display: block;
+    min-height: 400px;
     max-height: fit-content;
+    width: 500px;
 }
