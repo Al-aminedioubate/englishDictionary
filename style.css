@@ -25,3 +25,7 @@ body{
    height: 50px;
    border-style: none; 
 }
+
+h1{
+    font-size: 30px;
+}
