@@ -22,5 +22,6 @@ body{
 
 #txtinput{
    width: 400px;
-   height: 50px; 
+   height: 50px;
+   border-style: none; 
 }
