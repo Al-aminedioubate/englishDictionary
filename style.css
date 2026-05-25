@@ -4,6 +4,7 @@ body{
     height: 60vh;
     justify-content: center;
     align-items: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container{
