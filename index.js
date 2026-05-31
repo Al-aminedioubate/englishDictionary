@@ -6,3 +6,5 @@ let txtMeaning = document.getElementById("showWord");
 function findMeaning(){
 
 }
+
+//detectons la touche entrée
