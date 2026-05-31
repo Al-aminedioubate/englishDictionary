@@ -7,5 +7,9 @@ function findMeaning() {}
 
 //detectons la touche entrée
 input.addEventListener("keydown", (event) => {
-    if(event.key === 'Enter')
+	if (event.key === "Enter") {
+		event.preventDefault();
+
+		console.log("la touche entree a ete pressee!");
+	}
 });
