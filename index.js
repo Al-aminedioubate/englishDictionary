@@ -3,8 +3,7 @@ let input = document.getElementById("txtinput");
 let txtMeaning = document.getElementById("showWord");
 
 //Fonction du traitement des mots
-function findMeaning(){
-
-}
+function findMeaning() {}
 
 //detectons la touche entrée
+input.addEventListener("keydown", (event) => {});
