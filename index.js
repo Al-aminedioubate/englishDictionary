@@ -6,4 +6,6 @@ let txtMeaning = document.getElementById("showWord");
 function findMeaning() {}
 
 //detectons la touche entrée
-input.addEventListener("keydown", (event) => {});
+input.addEventListener("keydown", (event) => {
+    if(event.key === 'Enter')
+});
