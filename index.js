@@ -2,12 +2,9 @@
 let input = document.getElementById("txtinput");
 let txtMeaning = document.getElementById("showWord");
 
-const URL = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
-
 //Fonction du traitement des mots
 async function getDefinition(word) {
-    
-    
+	const response = fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
 }
 
 //detectons la touche entrée
