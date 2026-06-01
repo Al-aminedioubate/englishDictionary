@@ -2,8 +2,13 @@
 let input = document.getElementById("txtinput");
 let txtMeaning = document.getElementById("showWord");
 
+const URL = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
+
 //Fonction du traitement des mots
-function findMeaning() {}
+async function getDefinition(word) {
+    
+    
+}
 
 //detectons la touche entrée
 input.addEventListener("keydown", (event) => {
