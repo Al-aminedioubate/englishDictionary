@@ -7,6 +7,9 @@ async function getDefinition(word) {
 	const response = await fetch(
 		`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`,
 	);
+
+	const data = await response.json();
+	console.log(data);
 }
 
 //detectons la touche entrée
