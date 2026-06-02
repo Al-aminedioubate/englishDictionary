@@ -4,7 +4,9 @@ let txtMeaning = document.getElementById("showWord");
 
 //Fonction du traitement des mots
 async function getDefinition(word) {
-	const response = fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
+	const response = await fetch(
+		`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`,
+	);
 }
 
 //detectons la touche entrée
