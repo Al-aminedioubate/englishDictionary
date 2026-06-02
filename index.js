@@ -16,7 +16,6 @@ async function getDefinition(word) {
 input.addEventListener("keydown", (event) => {
 	if (event.key == "Enter") {
 		event.preventDefault();
-		console.log(input.value);
 		getDefinition(input.value);
 	}
 });
