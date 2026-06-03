@@ -4,6 +4,8 @@ let txtInfo = document.getElementById("infoText");
 
 //Fonction du traitement des mots
 async function getDefinition(word) {
+	try {
+	} catch (error) {}
 	const response = await fetch(
 		`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`,
 	);
