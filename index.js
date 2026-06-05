@@ -8,12 +8,8 @@ let titleWord = document.getElementById("title");
 async function getDefinition(word) {
 	try {
 		txtInfo.innerText = `Searching the meaning of "{word}"`;
-
-		const response = await fetch(
-			`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`,
-		);
-
-		const data = await response.json();
+		const URL = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
+		const response = await fetch(url).then((res) => res.json());
 
 		if (data.title) {
 			txtInfo.style.display = "none";
