@@ -2,6 +2,8 @@
 let input = document.getElementById("txtinput");
 let txtInfo = document.getElementById("infoText");
 
+let titleWord = document.getElementById("title");
+
 //Fonction du traitement des mots
 async function getDefinition(word) {
 	try {
