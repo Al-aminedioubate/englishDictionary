@@ -14,6 +14,7 @@ async function getDefinition(word) {
 		const data = await response.json();
 
 		if (data.title) {
+			txtInfo.style.display = "none";
 			titleWord.innerText = word;
 		}
 	} catch (error) {}
