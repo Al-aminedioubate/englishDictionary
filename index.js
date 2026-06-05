@@ -10,7 +10,10 @@ async function getDefinition(word) {
 		);
 
 		const data = await response.json();
-		console.log(data);
+
+		if (data.title) {
+			titleWord.innerText = word;
+		}
 	} catch (error) {}
 }
 
