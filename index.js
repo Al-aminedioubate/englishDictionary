@@ -5,13 +5,13 @@ let txtInfo = document.getElementById("infoText");
 //Fonction du traitement des mots
 async function getDefinition(word) {
 	try {
-	} catch (error) {}
-	const response = await fetch(
-		`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`,
-	);
+		const response = await fetch(
+			`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`,
+		);
 
-	const data = await response.json();
-	console.log(data);
+		const data = await response.json();
+		console.log(data);
+	} catch (error) {}
 }
 
 //detectons la touche entrée
