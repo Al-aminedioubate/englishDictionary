@@ -7,6 +7,8 @@ let titleWord = document.getElementById("title");
 //Fonction du traitement des mots
 async function getDefinition(word) {
 	try {
+		txtInfo.innerText = `Searching the meaning of "{word}"`;
+
 		const response = await fetch(
 			`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`,
 		);
