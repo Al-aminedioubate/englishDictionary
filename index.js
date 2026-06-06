@@ -15,6 +15,7 @@ async function getDefinition(word) {
 		if (response.title) {
 			txtInfo.style.display = "none";
 			titleWord.innerText = word;
+			meaningWord.innerText = "N/A";
 		}
 	} catch (error) {
 		console.log(error);
