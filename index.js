@@ -17,6 +17,7 @@ async function getDefinition(word) {
 		}
 	} catch (error) {
 		console.log(error);
+		txtInfo.textContent = "An error happen";
 	}
 }
 
