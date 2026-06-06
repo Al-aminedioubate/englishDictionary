@@ -15,7 +15,9 @@ async function getDefinition(word) {
 			txtInfo.style.display = "none";
 			titleWord.innerText = word;
 		}
-	} catch (error) {}
+	} catch (error) {
+		console.log(error);
+	}
 }
 
 //detectons la touche entrée
