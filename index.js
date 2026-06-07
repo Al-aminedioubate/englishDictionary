@@ -10,7 +10,7 @@ async function getDefinition(word) {
 	try {
 		txtInfo.innerText = `Searching the meaning of "${word}"`;
 		const URL = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
-		const response = await fetch(url).then((res) => res.json());
+		const response = await fetch(URL).then((res) => res.json());
 
 		if (response.title) {
 			txtInfo.style.display = "none";
@@ -25,8 +25,8 @@ async function getDefinition(word) {
 
 //detectons la touche entrée
 input.addEventListener("keyup", (event) => {
-	if (event.value && event.key === "Enter") {
+	if (event.target.value && event.key === "Enter") {
 		event.preventDefault();
-		getDefinition(input.value);
+		getDefinition(event.target.value);
 	}
 });
