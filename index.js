@@ -17,7 +17,7 @@ async function getDefinition(word) {
 			txtInfo.style.display = "none";
 			titleWord.innerText = word;
 			meaningWord.innerText = "N/A";
-			meaningContainerEl.style.display = "none";
+			meaningContainerEl.style.display = "block";
 		} else {
 		}
 	} catch (error) {
