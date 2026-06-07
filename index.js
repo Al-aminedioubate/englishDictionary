@@ -25,7 +25,7 @@ async function getDefinition(word) {
 
 //detectons la touche entrée
 input.addEventListener("keyup", (event) => {
-	if (event.key === "Enter") {
+	if (event.value && event.key === "Enter") {
 		event.preventDefault();
 		getDefinition(input.value);
 	}
