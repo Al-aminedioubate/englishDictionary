@@ -4,6 +4,7 @@ let txtInfo = document.getElementById("infoText");
 
 let titleWord = document.getElementById("title");
 let meaningWord = document.getElementById("meaning");
+let meaningContainerEl = document.getElementById("meaning-container");
 
 //Fonction du traitement des mots
 async function getDefinition(word) {
@@ -16,9 +17,8 @@ async function getDefinition(word) {
 			txtInfo.style.display = "none";
 			titleWord.innerText = word;
 			meaningWord.innerText = "N/A";
-		}else{
-            
-        }
+		} else {
+		}
 	} catch (error) {
 		console.log(error);
 		txtInfo.textContent = "An error happen";
