@@ -14,10 +14,10 @@ async function getDefinition(word) {
 		const response = await fetch(URL).then((res) => res.json());
 
 		if (response.title) {
+			meaningContainerEl.style.display = "block";
 			txtInfo.style.display = "none";
 			titleWord.innerText = word;
 			meaningWord.innerText = "N/A";
-			meaningContainerEl.style.display = "block";
 		} else {
 		}
 	} catch (error) {
