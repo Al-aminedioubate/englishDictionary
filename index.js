@@ -1,6 +1,6 @@
 //Declaration et initialisation des variables
 let input = document.getElementById("txtinput");
-let txtInfo = document.getElementById("infoText");
+let txtInfoEl = document.getElementById("infoText");
 
 let titleWord = document.getElementById("title");
 let meaningWord = document.getElementById("meaning");
