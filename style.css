@@ -37,7 +37,8 @@ h1{
 }
 
 p{
-   font-size: 22px; 
+   font-size: 22px;
+   text-align: center; 
 }
 
 .meaning-container{
