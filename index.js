@@ -24,6 +24,7 @@ async function getDefinition(word) {
 			txtInfoEl.style.display = "none";
 			meaningContainerEl.style.display = "block";
 			titleWord.innerText = response[0].word;
+			meaningWord.textContent = response[0].meanings[0].definitions[0].definition;
 		}
 	} catch (error) {
 		console.log(error);
