@@ -24,10 +24,11 @@ body{
 
 /*text style section*/
 #txtinput{
-   width: 450px;
+   width: 400px;
    height: 50px;
    border-style: none;
-   color: black; 
+   color: black;
+   padding-left: 30px; 
 }
 
 h1{
