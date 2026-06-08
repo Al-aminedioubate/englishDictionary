@@ -21,6 +21,7 @@ async function getDefinition(word) {
 			titleWord.innerText = word;
 			meaningWord.innerText = "N/A";
 		} else {
+			txtInfoEl.style.display = "none";
 		}
 	} catch (error) {
 		console.log(error);
