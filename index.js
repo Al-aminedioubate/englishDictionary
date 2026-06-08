@@ -10,6 +10,7 @@ let meaningContainerEl = document.getElementById("meaning-container");
 async function getDefinition(word) {
 	try {
 		txtInfoEl.style.display = "block";
+		meaningContainerEl.style.display = "none";
 		txtInfoEl.innerText = `Searching the meaning of "${word}"`;
 		const URL = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
 		const response = await fetch(URL).then((res) => res.json());
