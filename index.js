@@ -23,6 +23,7 @@ async function getDefinition(word) {
 		} else {
 			txtInfoEl.style.display = "none";
 			meaningContainerEl.style.display = "block";
+			titleWord.innerText = response[0].word;
 		}
 	} catch (error) {
 		console.log(error);
