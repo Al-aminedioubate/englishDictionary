@@ -9,13 +9,14 @@ let meaningContainerEl = document.getElementById("meaning-container");
 //Fonction du traitement des mots
 async function getDefinition(word) {
 	try {
-		txtInfo.innerText = `Searching the meaning of "${word}"`;
+		txtInfoEl.style.display = "block";
+		txtInfoEl.innerText = `Searching the meaning of "${word}"`;
 		const URL = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
 		const response = await fetch(URL).then((res) => res.json());
 
 		if (response.title) {
 			meaningContainerEl.style.display = "block";
-			txtInfo.style.display = "none";
+			txtInfoEl.style.display = "none";
 			titleWord.innerText = word;
 			meaningWord.innerText = "N/A";
 		} else {
