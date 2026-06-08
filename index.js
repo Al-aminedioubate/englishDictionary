@@ -22,6 +22,7 @@ async function getDefinition(word) {
 			meaningWord.innerText = "N/A";
 		} else {
 			txtInfoEl.style.display = "none";
+			meaningContainerEl.style.display = "block";
 		}
 	} catch (error) {
 		console.log(error);
