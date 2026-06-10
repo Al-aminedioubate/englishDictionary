@@ -28,7 +28,8 @@ body{
    height: 50px;
    border-style: none;
    color: black;
-   padding-left: 30px; 
+   padding-left: 30px;
+   font-size: 30px;
 }
 
 h1{
