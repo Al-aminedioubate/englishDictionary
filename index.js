@@ -36,6 +36,6 @@ async function getDefinition(word) {
 input.addEventListener("keyup", (event) => {
 	if (event.target.value && event.key === "Enter") {
 		event.preventDefault();
-		getDefinition(input.value);
+		getDefinition(inputValue.value);
 	}
 });
