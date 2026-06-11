@@ -24,8 +24,8 @@ async function getDefinition(word) {
 		} else {
 			txtInfoEl.style.display = "none";
 			meaningContainerEl.style.display = "block";
-			titleWord.innerText = response[0].word;
-			meaningWord.textContent = response[0].meanings[0].definitions[0].definition;
+			titleWord.innerText = data[0].word;
+			meaningWord.textContent = data[0].meanings[0].definitions[0].definition;
 		}
 	} catch (error) {
 		txtInfo.textContent = "An error happen";
