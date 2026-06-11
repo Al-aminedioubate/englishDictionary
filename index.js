@@ -12,7 +12,7 @@ async function getDefinition(word) {
 		txtInfoEl.style.display = "block";
 		meaningContainerEl.style.display = "none";
 		txtInfoEl.innerText = `Searching the meaning of "${word}"`;
-		
+
 		const URL = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
 		const response = await fetch(URL).then((res) => res.json());
 
@@ -28,7 +28,6 @@ async function getDefinition(word) {
 			meaningWord.textContent = response[0].meanings[0].definitions[0].definition;
 		}
 	} catch (error) {
-		console.log(error);
 		txtInfo.textContent = "An error happen";
 	}
 }
