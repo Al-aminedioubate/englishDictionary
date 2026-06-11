@@ -16,7 +16,7 @@ async function getDefinition(word) {
 		const URL = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
 		const response = await fetch(URL).then((res) => res.json());
 
-		if (response.title) {
+		if (res.title) {
 			meaningContainerEl.style.display = "block";
 			txtInfoEl.style.display = "none";
 			titleWord.innerText = word;
