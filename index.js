@@ -28,6 +28,7 @@ async function getDefinition(word) {
 			meaningWord.textContent = data[0].meanings[0].definitions[0].definition;
 		}
 	} catch (error) {
+		console.log(error);
 		txtInfo.textContent = "An error happen";
 	}
 }
