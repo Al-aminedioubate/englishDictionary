@@ -23,6 +23,7 @@ async function getDefinition(word) {
 			txtInfoEl.style.display = "none";
 			titleWord.innerText = word;
 			meaningWord.innerText = "N/A";
+			audioEl.style.display = "none";
 		} else {
 			txtInfoEl.style.display = "none";
 			meaningContainerEl.style.display = "block";
