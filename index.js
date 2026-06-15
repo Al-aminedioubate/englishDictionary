@@ -29,6 +29,7 @@ async function getDefinition(word) {
 			meaningContainerEl.style.display = "block";
 			titleWord.innerText = data[0].word;
 			meaningWord.textContent = data[0].meanings[0].definitions[0].definition;
+			audioEl.src = data[0].phonetic[0].audio;
 		}
 	} catch (error) {
 		console.log(error);
