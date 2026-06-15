@@ -32,7 +32,6 @@ async function getDefinition(word) {
 			audioEl.src = data[0].phonetic[0].audio;
 		}
 	} catch (error) {
-		console.log(error);
 		txtInfo.textContent = "An error happen";
 	}
 }
