@@ -50,6 +50,7 @@ p{
 .meaning-container{
     display: none;
     justify-content: center;
+    padding-left: 50px;
 }
 
 /*title style section*/
