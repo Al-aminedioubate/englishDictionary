@@ -49,6 +49,7 @@ p{
 /*meaning style section*/
 .meaning-container{
     display: none;
+    justify-content: center;
 }
 
 /*title style section*/
