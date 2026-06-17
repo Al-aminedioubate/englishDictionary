@@ -5,7 +5,6 @@ let txtInfoEl = document.getElementById("infoText");
 let titleWord = document.getElementById("title");
 let meaningWord = document.getElementById("meaning");
 let meaningContainerEl = document.getElementById("meaning-container");
-
 const audioEl = document.getElementById("audio");
 
 //Fonction du traitement des mots
